@@ -1,0 +1,20 @@
+# Дані змагання — завантажуються з Kaggle, не розповсюджуються разом із кодом
+data/*.csv
+# Підготовлені файли — генеруються командою `python src/data.py`
+data/*.parquet
+# ...але словник даних і опис лишаємо — це документація, 1 КБ
+!data/data_dictionary.csv
+
+# Проміжні OOF-вектори — перераховуються запуском ноутбуків 02-04
+experiments/oof/
+
+# Службові логи CatBoost (вимкнено через allow_writing_files=False)
+catboost_info/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

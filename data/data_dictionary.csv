@@ -1,0 +1,18 @@
+column,type,description
+record_id,identifier,"Unique row identifier; retain for submissions, exclude from model features."
+learner_age,numeric,Learner age in years.
+gender_group,categorical,Reported gender category.
+program_track,categorical,Education program or qualification track.
+study_time,numeric,Recorded study time in hours.
+attendance_rate,numeric,Recorded class attendance percentage.
+home_internet,categorical,Reported availability of internet access at home.
+sleep_duration,numeric,Reported sleep duration in hours.
+rest_quality,categorical,Reported sleep-quality category.
+learning_routine,categorical,Reported study approach.
+campus_resources,categorical,Rating of available learning facilities.
+assessment_level,categorical,Assessment difficulty category.
+study_minutes,numeric,An additional estimate of study time in minutes.
+engagement_index,numeric,A recorded learning-engagement index.
+intake_marker,numeric,A numeric field recorded during intake.
+registration_group,categorical,An administrative registration-group code.
+assessment_score,target,Assessment score in points (0–100); provided only in train.csv.
