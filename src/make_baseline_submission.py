@@ -1,8 +1,3 @@
-"""Крок 0: наскрізна перевірка конвеєра.
-
-Мета не скор, а переконатися, що дані читаються, препроцесинг працює і формат
-сабмішна правильний. Краще знайти проблему з форматом зараз, ніж у день здачі.
-"""
 import sys
 from pathlib import Path
 
@@ -23,7 +18,7 @@ X, y = D.xy(train_dev)
 factory = lambda: Pipeline([("prep", make_preprocessor(scale=True)),
                             ("model", LinearRegression())])
 
-print("CV (Protocol A) для перевірки конвеєра:")
+print("CV (Protocol A):")
 oof, _ = CV.run_cv(factory, X, y, name="step0_linreg_sanity", protocol="A")
 
 model = factory()
